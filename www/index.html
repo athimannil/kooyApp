@@ -5,8 +5,6 @@
     <title>Ratchet template page</title>
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
-    <!-- <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" /> -->
     <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -19,8 +17,7 @@
 
     <!-- Make sure all your bars are the first things in your <body> -->
     <header id="top-header" class="bar bar-nav">
-        <a class="icon icon-info pull-left"></a>
-        <!-- <a id="close-keyboard" class="icon icon-share pull-right"></a> -->
+        <a id="about" href="#infoModal" class="icon icon-info pull-left" ontouchstart="closeKeyboard();"></a>
         <a id="close-keyboard" class="icon glyph pull-right">
             <span class="flaticon-mobile158"></span> 
         </a>
@@ -29,9 +26,7 @@
 
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div id="text-area" class="content">
-      <!-- <div id="status" style="float:left;">Hello mate</div> -->
-      <!-- <button id="toggle-button">toggle button</button> -->
-      <textarea id="text-box" rows="10" placeholder="Type here...." autocapitalize="off" style="margin-bottom:0;">ഇതൊരു പരീക്ഷണമാണ്</textarea>
+      <textarea id="text-box" rows="10" placeholder="Type here...." autocapitalize="off" style="margin-bottom:0;"></textarea>
 
       <div id="share-button">
         <a class="glyph share-button" data-shareto="clear">
@@ -56,6 +51,309 @@
             <!-- <span class="glyph-icon flaticon-speech95"></span></a> -->
       </div>
 
+    </div>
+
+    <div id="infoModal" class="modal">
+      <header class="bar bar-nav">
+        <a class="icon icon-close pull-right" href="#infoModal"></a>
+        <h1 class="title">Settings</h1>
+      </header>
+      <div class="content">
+        <div class="content-padded">
+            <h3>Kooy v1.0</h3>
+            <p>KooyApp implemented with the support of kooy jQuery plugin. Kooy is a jQuery based input method library for malayalam phonetic input.</p>
+            <p><h4>Application Developed by:</h4> Muhammed Athimannil<br>www.athimannil.com</p>
+            <p><h4>Kooy plugin Developed by:</h4> Sanoob Pattanath<br>www.pattanath.com</p>
+
+            <div class="panel panel-default">
+                <div class="panel-heading"><strong>സ്വരങ്ങള്‍ (Vowels)</strong></div>
+                <div class="key-shortcut panel-body">
+                    <dl>
+                        <dd>a</dd>
+                        <dd>അ</dd>
+                        <dd>&nbsp;</dd>
+                    </dl>
+                    <dl>
+                        <dd>aa</dd>
+                        <dd>ആ</dd>
+                        <dd>ാ</dd>
+                    </dl>
+                    <dl>
+                        <dd>i</dd>
+                        <dd>ഇ</dd>
+                        <dd>ി</dd>
+                    </dl>
+                    <dl>
+                        <dd>ii</dd>
+                        <dd>ഈ</dd>
+                        <dd>ീ</dd>
+                    </dl>
+                    <dl>
+                        <dd>u</dd>
+                        <dd>ഉ</dd>
+                        <dd>ു</dd>
+                    </dl>
+                    <dl>
+                        <dd>uu</dd>
+                        <dd>ഊ</dd>
+                        <dd>ൂ</dd>
+                    </dl>
+                    <dl>
+                        <dd>R</dd>
+                        <dd>ഋ</dd>
+                        <dd>ൃ</dd>
+                    </dl>
+                    <dl>
+                        <dd>e</dd>
+                        <dd>എ</dd>
+                        <dd>െ</dd>
+                    </dl>
+                    <dl>
+                        <dd>E</dd>
+                        <dd>ഏ</dd>
+                        <dd>േ</dd>
+                    </dl>
+                    <dl>
+                        <dd>ai</dd>
+                        <dd>ഐ</dd>
+                        <dd>ൈ</dd>
+                    </dl>
+                    <dl>
+                        <dd>o</dd>
+                        <dd>ഒ</dd>
+                        <dd>ൊ</dd>
+                    </dl>
+                    <dl>
+                        <dd>O</dd>
+                        <dd>ഓ</dd>
+                        <dd>ോ</dd>
+                    </dl>
+                    <dl>
+                        <dd>au</dd>
+                        <dd>ഔ</dd>
+                        <dd>ൗ</dd>
+                    </dl>
+                    <dl>
+                        <dd>~</dd>
+                        <dd>&nbsp;</dd>
+                        <dd>്</dd>
+                    </dl>
+                    <dl>
+                        <dd>H</dd>
+                        <dd>&nbsp;</dd>
+                        <dd>ഃ</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><strong>സ്വരങ്ങള്‍ (Vowels)</strong></div>
+                <div class="key-shortcut panel-body">
+                    <dl>
+                        <dd>ka</dd>
+                        <dd>ക</dd>
+                    </dl>
+                    <dl>
+                        <dd>kha</dd>
+                        <dd>ഖ</dd>
+                    </dl>
+                    <dl>
+                        <dd>ga</dd>
+                        <dd>ഗ</dd>
+                    </dl>
+                    <dl>
+                        <dd>gha</dd>
+                        <dd>ഘ</dd>
+                    </dl>
+                    <dl>
+                        <dd>nga</dd>
+                        <dd>ങ</dd>
+                    </dl>
+                    <dl>
+                        <dd>cha</dd>
+                        <dd>ച</dd>
+                    </dl>
+                    <dl>
+                        <dd>chha</dd>
+                        <dd>ഛ</dd>
+                    </dl>
+                    <dl>
+                        <dd>ja</dd>
+                        <dd>ജ</dd>
+                    </dl>
+                    <dl>
+                        <dd>jha</dd>
+                        <dd>ഝ</dd>
+                    </dl>
+                    <dl>
+                        <dd>nja</dd>
+                        <dd>ഞ</dd>
+                    </dl>
+                    <dl>
+                        <dd>Ta</dd>
+                        <dd>ട</dd>
+                    </dl>
+                    <dl>
+                        <dd>Tha</dd>
+                        <dd>ഠ</dd>
+                    </dl>
+                    <dl>
+                        <dd>Da</dd>
+                        <dd>ഡ</dd>
+                    </dl>
+                    <dl>
+                        <dd>Dha</dd>
+                        <dd>ഢ</dd>
+                    </dl>
+                    <dl>
+                        <dd>Na</dd>
+                        <dd>ണ</dd>
+                    </dl>
+                    <dl>
+                        <dd>tha</dd>
+                        <dd>ത</dd>
+                    </dl>
+                    <dl>
+                        <dd>thha</dd>
+                        <dd>ഥ</dd>
+                    </dl>
+                    <dl>
+                        <dd>da</dd>
+                        <dd>ദ</dd>
+                    </dl>
+                    <dl>
+                        <dd>dha</dd>
+                        <dd>ധ</dd>
+                    </dl>
+                    <dl>
+                        <dd>na</dd>
+                        <dd>ന</dd>
+                    </dl>
+                    <dl>
+                        <dd>pa</dd>
+                        <dd>പ</dd>
+                    </dl>
+                    <dl>
+                        <dd>pha</dd>
+                        <dd>ഫ</dd>
+                    </dl>
+                    <dl>
+                        <dd>ba</dd>
+                        <dd>ബ</dd>
+                    </dl>
+                    <dl>
+                        <dd>bha</dd>
+                        <dd>ഭ</dd>
+                    </dl>
+                    <dl>
+                        <dd>ma</dd>
+                        <dd>മ</dd>
+                    </dl>
+                    <dl>
+                        <dd>ya</dd>
+                        <dd>യ</dd>
+                    </dl>
+                    <dl>
+                        <dd>ra</dd>
+                        <dd>ര</dd>
+                    </dl>
+                    <dl>
+                        <dd>la</dd>
+                        <dd>ല</dd>
+                    </dl>
+                    <dl>
+                        <dd>va</dd>
+                        <dd>വ</dd>
+                    </dl>
+                    <dl>
+                        <dd>Sa</dd>
+                        <dd>ശ</dd>
+                    </dl>
+                    <dl>
+                        <dd>sha</dd>
+                        <dd>ഷ</dd>
+                    </dl>
+                    <dl>
+                        <dd>sa</dd>
+                        <dd>സ</dd>
+                    </dl>
+                    <dl>
+                        <dd>ha</dd>
+                        <dd>ഹ</dd>
+                    </dl>
+                    <dl>
+                        <dd>La</dd>
+                        <dd>ള</dd>
+                    </dl>
+                    <dl>
+                        <dd>zha</dd>
+                        <dd>ഴ</dd>
+                    </dl>
+                    <dl>
+                        <dd>rra</dd>
+                        <dd>റ</dd>
+                    </dl>
+                    <dl>
+                        <dd>ta</dd>
+                        <dd>റ്റ</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><strong>സ്വരങ്ങള്‍ (Vowels)</strong></div>
+                <div class="key-shortcut panel-body">
+                    <dl>
+                        <dd>n_</dd>
+                        <dd>ന്‍‌</dd>
+                    </dl>
+                    <dl>
+                        <dd>N_</dd>
+                        <dd>ണ്‍‌</dd>
+                    </dl>
+                    <dl>
+                        <dd>L_</dd>
+                        <dd>ള്‍‌</dd>
+                    </dl>
+                    <dl>
+                        <dd>l_</dd>
+                        <dd>ല്‍‌</dd>
+                    </dl>
+                    <dl>
+                        <dd>r_</dd>
+                        <dd>ര്‍‌</dd>
+                    </dl>
+                    <dl>
+                        <dd>m_</dd>
+                        <dd>ം‌</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><strong>കൂട്ടക്ഷരങ്ങള്‍</strong></div>
+                <div class="key-shortcut panel-body">
+                    <dl>
+                        <dd>nka</dd>
+                        <dd>ങ്ക</dd>
+                    </dl>
+                    <dl>
+                        <dd>ncha</dd>
+                        <dd>ഞ്ച</dd>
+                    </dl>
+                    <dl>
+                        <dd>NTa</dd>
+                        <dd>ള്‍‌</dd>
+                    </dl>
+                    <dl>
+                        <dd>mpa</dd>
+                        <dd>മ്പ</dd>
+                    </dl>
+                    <dl>
+                        <dd>nta</dd>
+                        <dd>ന്റ</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+      </div>
     </div>
 
     <!-- Include the compiled Ratchet JS -->
