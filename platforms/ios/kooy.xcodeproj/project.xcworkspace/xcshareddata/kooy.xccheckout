@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>D4FDE2C2-0A94-4F0C-BB2D-698D2E029D55</string>
+	<string>E43365DD-3B43-4F46-87DA-41A6828C8E36</string>
 	<key>IDESourceControlProjectName</key>
 	<string>kooy</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>A765ACDD-1FA4-445F-A8F7-F69392608A28</key>
+		<key>D4CB526B-BD17-4D7D-A744-389981751118</key>
 		<string>https://github.com/athimannil/kooyApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>platforms/ios/kooy.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>A765ACDD-1FA4-445F-A8F7-F69392608A28</key>
+		<key>D4CB526B-BD17-4D7D-A744-389981751118</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>A765ACDD-1FA4-445F-A8F7-F69392608A28</string>
+	<string>D4CB526B-BD17-4D7D-A744-389981751118</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>A765ACDD-1FA4-445F-A8F7-F69392608A28</string>
+			<string>D4CB526B-BD17-4D7D-A744-389981751118</string>
 			<key>IDESourceControlWCCName</key>
 			<string>kooyApp</string>
 		</dict>

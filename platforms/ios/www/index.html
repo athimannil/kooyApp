@@ -1,44 +1,68 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
+    <!-- <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" /> -->
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+    <!-- <link href="css/ratchet-theme-ios.css" rel="stylesheet"> -->
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header id="top-header" class="bar bar-nav">
+        <a class="icon icon-info pull-left"></a>
+        <!-- <a id="close-keyboard" class="icon icon-share pull-right"></a> -->
+        <a id="close-keyboard" class="icon glyph pull-right">
+            <span class="flaticon-mobile158"></span> 
+        </a>
+        <h1 class="title">കൂയ്</h1>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div id="text-area" class="content">
+      <!-- <div id="status" style="float:left;">Hello mate</div> -->
+      <!-- <button id="toggle-button">toggle button</button> -->
+      <textarea id="text-box" rows="10" placeholder="Type here...." autocapitalize="off" style="margin-bottom:0;">ഇതൊരു പരീക്ഷണമാണ്</textarea>
+
+      <div id="share-button">
+        <a class="glyph share-button" data-shareto="clear">
+            <span class="glyph-icon flaticon-close33"></span></a>
+        <a class="glyph share-button" data-shareto="copy">
+            <span class="glyph-icon flaticon-copy26"></span></a> 
+        <a class="glyph share-button" data-shareto="paste">
+            <span class="glyph-icon flaticon-clipboard46"></span></a> 
+
+        <a class="glyph share-button" data-shareto="whatsapp">
+            <span class="glyph-icon flaticon-whatsapp"></span></a>
+        <a class="glyph share-button" data-shareto="twitter">
+            <span class="glyph-icon flaticon-twitter32"></span></a>
+        <a class="glyph share-button" data-shareto="facebook">
+            <span class="glyph-icon flaticon-facebook48"></span></a>
+
+        <a class="glyph share-button" data-shareto="sms">
+            <span class="glyph-icon flaticon-chat51"></span></a>
+        <a class="glyph share-button" data-shareto="email">
+            <span class="glyph-icon flaticon-mail9"></span></a>
+        <!-- <a class="glyph share-button" data-shareto="sms"> -->
+            <!-- <span class="glyph-icon flaticon-speech95"></span></a> -->
+      </div>
+
+    </div>
+
+    <!-- Include the compiled Ratchet JS -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/kooy.js"></script>
+    <script type="text/javascript" src="js/ratchet.min.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+  </body>
 </html>

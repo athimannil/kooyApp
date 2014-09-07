@@ -1,0 +1,158 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+    font-size: 20px;
+	font-style: normal;
+}
+.flaticon-chat51:before {
+	content: "\e000";
+}
+.flaticon-clipboard46:before {
+	content: "\e001";
+}
+.flaticon-close33:before {
+	content: "\e002";
+}
+.flaticon-copy26:before {
+	content: "\e003";
+}
+.flaticon-facebook48:before {
+	content: "\e004";
+}
+.flaticon-mail9:before {
+	content: "\e005";
+}
+.flaticon-mobile158:before {
+	content: "\e006";
+}
+.flaticon-speech95:before {
+	content: "\e007";
+}
+.flaticon-twitter32:before {
+	content: "\e008";
+}
+.flaticon-whatsapp:before {
+	content: "\e009";
+}
+
+.glyph {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+    .glyph-icon {
+        padding: 11px 0;
+        display: block;
+        font-family:"Flaticon";
+        font-size: 40px;
+        line-height: 1;
+    }
+    .glyph-icon:before {
+        font-size: 40px;
+        color: #FFF;
+        margin-left: 0;
+    }
+
+*{
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+		-ms-user-select: none;
+		 -o-user-select: none;
+			user-select: none;
+}
+textarea{
+	-webkit-user-select: text;
+	   -moz-user-select: text;
+		-ms-user-select: text;
+		 -o-user-select: text;
+			user-select: text;
+}
+
+a{
+	color: #FFF;
+}
+a:hover,
+a:focus{
+	color: #FFF;
+}
+#top-header{
+	background-color: #E27252;
+	color: #FFF;
+	border-bottom: none;
+}
+	#top-header h1{
+		color: #FFF;
+	}
+	#top-header .flaticon-mobile158,
+	#top-header .flaticon-mobile158:before{
+		font-size: 26px;
+	}
+#text-area{
+	position: relative;
+}
+#text-box{
+	float: left;
+	padding: 5px 15px;
+	border: none;
+	border-radius: 0;
+}
+#share-button{
+	padding: 15px 0;
+	height: 216px;
+	width: 100%;
+	float: left;
+	background-color: #E27252;
+}
+	#share-button a{
+		color: #FFF;
+		width: 33.3333%;
+		float: left;
+		text-align: center;
+	}
+
+.flaticon-mail9{
+	padding-top: 5px;
+}
+
+/*iphone 3g*/
+/*@media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1){}*/
+/*iphone4*/
+/*@media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2){}*/
+/*iphone5*/
+/*@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){}*/
+
+/* iPhone5 */
+@media screen and (device-width: 320px) and (device-height: 568px) {
+	#text-box{
+		height: 288px;
+	}
+}
+
+/* iphone */
+@media screen and (device-width: 320px) and (device-height: 480px) {
+	#text-box{
+		height: 200px;
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
