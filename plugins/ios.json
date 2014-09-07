@@ -4,8 +4,72 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {}
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"IonicKeyboard\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Clipboard\"><param name=\"ios-package\" value=\"CDVClipboard\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SocialSharing\"><param name=\"ios-package\" value=\"SocialSharing\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" onload=\"true\" value=\"CDVStatusBar\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarBackgroundColor\" value=\"#000000\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "framework": {
+                "parents": {
+                    "Social.framework": [
+                        {
+                            "xml": "true",
+                            "count": 1
+                        }
+                    ],
+                    "MessageUI.framework": [
+                        {
+                            "xml": "true",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
     },
-    "installed_plugins": {},
+    "installed_plugins": {
+        "com.ionic.keyboard": {
+            "PACKAGE_NAME": "com.hoobi.kooy"
+        },
+        "com.verso.cordova.clipboard": {
+            "PACKAGE_NAME": "com.hoobi.kooy"
+        },
+        "nl.x-services.plugins.socialsharing": {
+            "PACKAGE_NAME": "com.hoobi.kooy"
+        },
+        "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "com.hoobi.kooy"
+        }
+    },
     "dependent_plugins": {}
 }
